@@ -22,10 +22,23 @@ const Home = () => {
     <div>
       <div className='tasks'>
         {tasks && tasks.map((task) => (
-          <p key={task._id}>{task.title}</p>
+      
+      <div className='task-details'>
+        <h4>Tasks</h4>
+          <p key={task._id}><strong>Title:</strong> {task.title}</p>
+          
+          <p key={task._id}> <strong>Description:</strong> {task.description}</p>
+          
+          <p key={task._id}><strong>Priority</strong> {task.priority}</p>
+          
+          <p key={task._id}><strong>Status:</strong> {task.status}</p> 
+
+          <p key={task._id}><strong>Created:</strong> {task.createdAt}</p> 
+          <br />
+          </div>
         ))}
       </div>
-
+          
     </div>
   )
   }
