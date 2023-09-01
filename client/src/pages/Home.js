@@ -25,7 +25,7 @@ const Home = () => {
         {tasks && tasks.map((task) => (
       
       <div className='task-details'>
-        <h4>Tasks</h4>
+        <h4>Task</h4>
           <p key={task._id}><strong>Title:</strong> {task.title}</p>
           
           <p key={task._id}> <strong>Description:</strong> {task.description}</p>

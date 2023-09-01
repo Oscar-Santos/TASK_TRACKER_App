@@ -44,7 +44,7 @@ export default function Form() {
   return (
     <div>
       <form action="" className="create" onSubmit={handleSubmit}>
-        <h3>Add a new Task</h3>
+        <h3>Add a New Task</h3>
 
         <label>Title:</label>
         <input
@@ -72,8 +72,8 @@ export default function Form() {
         <label>Status:</label>
         <select onChange={(e) => setStatus(e.target.value)} value={status}>
           <option value="">Select Status</option>
-          <option value="todo">To Do</option>
-          <option value="inProgress">In Progress</option>
+          <option value="To-do">To Do</option>
+          <option value="in-Progress">In Progress</option>
           <option value="completed">Completed</option>
         </select>
 
