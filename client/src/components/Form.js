@@ -64,17 +64,17 @@ export default function Form() {
         <label>Priority:</label>
         <select onChange={(e) => setPriority(e.target.value)} value={priority}>
           <option value="">Select Priority</option>
-          <option value="low">Low</option>
-          <option value="medium">Medium</option>
-          <option value="high">High</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
         </select>
 
         <label>Status:</label>
         <select onChange={(e) => setStatus(e.target.value)} value={status}>
           <option value="">Select Status</option>
-          <option value="To-do">To Do</option>
-          <option value="in-Progress">In Progress</option>
-          <option value="completed">Completed</option>
+          <option value="To do">To Do</option>
+          <option value="in Progress">In Progress</option>
+          <option value="Completed">Completed</option>
         </select>
 
         <button>Add Task</button>
