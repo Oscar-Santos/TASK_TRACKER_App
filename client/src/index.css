@@ -48,10 +48,44 @@
   color: #333;
 }
 
+/* styling for the form */
+label, input {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+  background-color: rgb(22, 159, 47);
+  color: #fff;
+  cursor: pointer;
+}
+
+p.error {
+  padding: 12px;
+  background: #ffefef;
+  border: 4px solid #ffaeae;
+  color:#fa0909e4;
+  border-radius: 4px;
+  margin: 20px 0;
+}
 
 
 
-/* Media Query for Responsiveness */
+
+
 @media screen and (max-width: 768px) {
   .home {
     grid-template-columns: 1fr;
