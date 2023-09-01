@@ -2,11 +2,13 @@
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 2rem;
+  gap: 100px;
 }
 
 /* Styles for Task Details */
 .task-details {
+  /* display: grid;
+  grid-template-columns: 3fr 1fr; */
   background-color: rgb(241, 195, 173);
   border-radius: 2rem;
   margin: 4rem auto;
@@ -24,6 +26,7 @@
   margin: 0 0 1.5rem 0;
   font-size: 1.8rem;
   font-weight: 600;
+  color:rgb(24, 104, 72)
 }
 
 .task-details p {
@@ -32,6 +35,21 @@
   line-height: 1.6;
   color: #333;
 }
+
+
+.task-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: whitesmoke;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+
+
 
 /* Media Query for Responsiveness */
 @media screen and (max-width: 768px) {

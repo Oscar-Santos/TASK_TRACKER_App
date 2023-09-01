@@ -1,4 +1,5 @@
 import { useState,useEffect } from 'react'
+import Form from '../components/Form'
 import React from 'react'
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
+    <div className='home'>
       <div className='tasks'>
         {tasks && tasks.map((task) => (
       
@@ -38,7 +39,7 @@ const Home = () => {
           </div>
         ))}
       </div>
-          
+         <Form /> 
     </div>
   )
   }
