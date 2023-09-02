@@ -35,12 +35,16 @@ const Home = () => {
           
           <p key={task._id}><strong>Status:</strong> {task.status}</p> 
 
-          <p key={task._id}><strong>Created:</strong> {task.createdAt}</p> 
+          {/* <p key={task._id}><strong>Created:</strong> {task.createdAt}</p>  */}
           <br />
-          </div>
+          <span>Delete</span>
+   </div>
+          
         ))}
+    
       </div>
          <Form /> 
+         
     </div>
   )
   }
