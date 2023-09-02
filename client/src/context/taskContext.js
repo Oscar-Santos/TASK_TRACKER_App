@@ -13,6 +13,7 @@ export const tasksReducer = (state, action)=> {
             return {
                 tasks: [action.payload, ...state.tasks]
             }
+
         default:
             return state
     }
