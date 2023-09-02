@@ -1,10 +1,11 @@
-import { useState,useEffect } from 'react'
+import { useEffect } from 'react'
+import { useTasksContext } from '../hooks/useTasksContext'
 import Form from '../components/Form'
 import React from 'react'
 
 const Home = () => {
-
-  const [tasks, setTasks] = useState(null)
+  const {tasks, dispatch} = useTasksContext()
+  
 
   useEffect(() => {
     const fetchTasks = async () => {
@@ -12,12 +13,12 @@ const Home = () => {
       const json = await response.json()
 
       if (response.ok) {
-        setTasks(json)
+        dispatch({type: 'SET_TASKS', payload: json})
       }
     }
 
     fetchTasks()
-  }, [])
+  }, [dispatch])
 
   return (
     <div className='home'>

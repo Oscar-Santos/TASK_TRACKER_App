@@ -1,7 +1,9 @@
 
 import React, { useState } from "react";
+import { useTasksContext } from '../hooks/useTasksContext'
 
 export default function Form() {
+  const { dispatch } = useTasksContext();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState("");
@@ -23,8 +25,9 @@ export default function Form() {
         },
       });
 
+      const json = await response.json();
       if (!response.ok) {
-        const json = await response.json();
+        
         setError(json.error || "Something went wrong");
         setSuccess(null);
       } else {
@@ -34,6 +37,8 @@ export default function Form() {
         setStatus("");
         setError(null);
         setSuccess("Task added successfully");
+        
+        dispatch({type: 'CREATE_TASK', payload: task})
       }
     } catch (error) {
       setError("Something went wrong");
