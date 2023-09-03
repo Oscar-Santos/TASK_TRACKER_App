@@ -13,6 +13,7 @@ export default function Form() {
   const [success, setSuccess] = useState(null);
 
   const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -41,6 +42,10 @@ export default function Form() {
         setStatus("");
         setError(null);
         setSuccess("Task added successfully");
+        
+        setTimeout(() => {
+          setSuccess(null);
+        }, 3000); 
         
         dispatch({type: 'CREATE_TASK', payload: json})
         navigate("/");

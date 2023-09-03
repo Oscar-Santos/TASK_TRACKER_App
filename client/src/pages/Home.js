@@ -76,9 +76,8 @@ const Home = () => {
           
           <p key={task._id}><strong>Status:</strong> {task.status}</p> 
       
-          {/* <p key={task._id}><strong>Created:</strong> {task.createdAt}</p>  */}
+          <p key={task._id}><strong>Created:</strong> {task.createdAt}</p> 
           
-          {/* <span onClick={handleClick}>Delete</span> */}
           <span onClick={() => handleClick(task._id)}>Delete</span>
           {/* <span onClick={() => handleUpdate(task._id)}>Update</span> */}
    </div>
