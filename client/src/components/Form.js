@@ -1,4 +1,5 @@
 
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { useTasksContext } from '../hooks/useTasksContext'
 
@@ -11,9 +12,11 @@ export default function Form() {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+   
     const task = { title, description, priority, status };
 
     try {
@@ -39,6 +42,7 @@ export default function Form() {
         setSuccess("Task added successfully");
         
         dispatch({type: 'CREATE_TASK', payload: task})
+        // navigate("/home");
       }
     } catch (error) {
       setError("Something went wrong");
