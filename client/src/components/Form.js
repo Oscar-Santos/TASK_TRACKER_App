@@ -34,6 +34,7 @@ export default function Form() {
         setError(json.error || "Something went wrong");
         setSuccess(null);
       } else {
+        navigate('/')
         setTitle("");
         setDescription("");
         setPriority("");
@@ -41,8 +42,10 @@ export default function Form() {
         setError(null);
         setSuccess("Task added successfully");
         
-        dispatch({type: 'CREATE_TASK', payload: task})
-        // navigate("/home");
+        dispatch({type: 'CREATE_TASK', payload: json})
+        navigate("/");
+        navigate("/home");
+
       }
     } catch (error) {
       setError("Something went wrong");

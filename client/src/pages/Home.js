@@ -9,31 +9,25 @@ import { useNavigate } from 'react-router-dom'
 const Home = () => {
   const navigate = useNavigate()
   const {tasks, dispatch} = useTasksContext()
-  const [data, setData] = useState([])
+
   const fetchTasks = async () => {
-    console.log(tasks)
+  
     const response = await fetch(`/api/tasks`)
     const json = await response.json()
 
-    setData (json)
     console.log(json)
     if (response.ok) {
-      // dispatch({type: 'SET_TASKS', payload: json})
-      console.log('ok', tasks)
+      
+      dispatch({type: 'SET_TASKS', payload: json})
+
+      navigate('/home')
     }
   }
-  useEffect(() => {
-    // const fetchTasks = async () => {
-    //   const response = await fetch(`/api/tasks`)
-    //   const json = await response.json()
 
-    //   if (response.ok) {
-    //     dispatch({type: 'SET_TASKS', payload: json})
-    //   }
-    
-// console.log(tasks)
+  useEffect(() => {
+
     fetchTasks()
-  }, [fetchTasks ,dispatch])
+  }, [])
 
 
 
@@ -70,7 +64,7 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='tasks'>
-        {data && data.map((task) => (
+        {tasks && tasks.map((task) => (
       
       <div className='task-details' key={task._id}>
         <h4>Task</h4>
