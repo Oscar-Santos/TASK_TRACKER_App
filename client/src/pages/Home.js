@@ -51,14 +51,6 @@ const Home = () => {
     }
     
   };
-  
-// if (tasks.length == 0) {
-//   return (
-//     <div>
-//       loading......
-//       </div>
-//   )
-// }
 
 
   return (
@@ -78,8 +70,10 @@ const Home = () => {
       
           <p key={task._id}><strong>Created:</strong> {task.createdAt}</p> 
           
-          <span onClick={() => handleClick(task._id)}>Delete</span>
-          {/* <span onClick={() => handleUpdate(task._id)}>Update</span> */}
+          <span className="delete-button" onClick={() => handleClick(task._id)}>Delete</span>
+             
+          <span className="update-button"> Update</span>
+        
    </div>
           
         ))}
