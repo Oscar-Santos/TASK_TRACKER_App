@@ -1,6 +1,7 @@
 
 import { useState,  useEffect } from 'react'
 import { useTasksContext } from '../hooks/useTasksContext'
+import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 
 import Form from '../components/Form'
@@ -124,7 +125,8 @@ const handleUpdateSubmit = async () => {
           </p>
 
           <p>
-            <strong>Created:</strong> {task.createdAt}
+            <strong>Created:</strong> {formatDistanceToNow(new Date(task.createdAt), {addSuffix: true})}
+            
           </p>
 
           {isUpdateFormVisible && task._id === updatedTask._id ? (
