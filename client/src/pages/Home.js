@@ -1,3 +1,4 @@
+
 import { useState,  useEffect } from 'react'
 import { useTasksContext } from '../hooks/useTasksContext'
 
@@ -175,13 +176,14 @@ const handleUpdateSubmit = async () => {
           ) : (
             <>
               <span
-                className='delete-button'
+                className='delete-button material-symbols-outlined'
                 onClick={() => handleClick(task._id)}
               >
                 Delete
               </span>
+             
               <span
-                className='update-button'
+                className='update-button material-symbols-outlined'
                 onClick={() => {
                   setUpdatedTask(task); // Set the task data to be updated
                   setIsUpdateFormVisible(true); // Show the update form
