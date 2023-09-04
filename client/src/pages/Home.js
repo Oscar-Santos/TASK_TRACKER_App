@@ -99,29 +99,7 @@ const handleUpdateSubmit = async () => {
 
 
   return (
-  //   <div className='home'>
-  //     <div className='tasks'>
-  //       {tasks && tasks.map((task) => (
-      
-  //     <div className='task-details' key={task._id}>
-  //       <h4>Task</h4>
-  //         <p key={task._id}><strong>Title:</strong> {task.title}</p>
-          
-  //         <p key={task._id}> <strong>Description:</strong> {task.description}</p>
-          
-  //         <p key={task._id}><strong>Priority</strong> {task.priority}</p>
-          
-  //         <p key={task._id}><strong>Status:</strong> {task.status}</p> 
-      
-  //         <p key={task._id}><strong>Created:</strong> {task.createdAt}</p> 
-          
-  //         <span className="delete-button" onClick={() => handleClick(task._id)}>Delete</span>
-             
-  //         <span className="update-button"> Update</span>
-        
-  //  </div>
-     
-  //3
+
   <div className='home'>
   <div className='tasks'>
     {tasks &&
@@ -158,7 +136,40 @@ const handleUpdateSubmit = async () => {
                   setUpdatedTask({ ...updatedTask, title: e.target.value })
                 }
               />
-              {/* Repeat this for other task attributes (description, priority, status) */}
+        
+              <input
+                type='text'
+                placeholder='Updated Description'
+                value={updatedTask.description}
+                onChange={(e) =>
+                  setUpdatedTask({ ...updatedTask, description: e.target.value })
+                  }
+              />
+ 
+          <select 
+            name="priority" 
+            value={updatedTask.priority}
+            onChange={(e) =>
+              setUpdatedTask({ ...updatedTask, priority: e.target.value })
+            }>        
+                <option value="">Select Priority</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+          </select>
+
+            <select 
+              name='status'
+              value={updatedTask.status}
+              onChange={(e) =>
+                  setUpdatedTask({ ...updatedTask, status: e.target.value })
+              }>
+                <option value="">Select Status</option>
+                <option value="To Do">To Do</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+             </select>
+      
               <button onClick={handleUpdateSubmit}>Update Task</button>
             </div>
           ) : (
