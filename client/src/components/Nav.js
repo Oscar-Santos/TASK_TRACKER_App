@@ -14,9 +14,21 @@ export default function Nav(){
                 <div>Task Tracker </div>
             </Link>
 
-            <Link to="/documentation">
+            {/* <Link to="/documentation">
                 <div>Documentation Page </div>
-            </Link>
+            </Link> */}
+            <nav>
+                <div>
+                    <Link to="/login">
+                        Login 
+                    </Link>
+
+                    <Link to="/signup">
+                        Signup 
+                    </Link>
+                </div>
+            </nav>
+            
 
         </div>
     )
