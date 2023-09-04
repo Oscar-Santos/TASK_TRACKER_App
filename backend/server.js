@@ -4,10 +4,12 @@ const moongoose = require('mongoose');
 const app = express();
 
 const taskRoutes = require('./routes/taskRoutes');
+const userRoutes = require('./routes/user');
 
 
 // midleware
 app.use(express.json());
+
 
 app.use((req, res, next) => {
     console.log(req.path, req.method)
@@ -16,6 +18,7 @@ app.use((req, res, next) => {
 
 // routes
 app.use('/api/tasks', taskRoutes);
+app.use('/api/users', userRoutes);
 
 
 
