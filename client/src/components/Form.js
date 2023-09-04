@@ -17,7 +17,7 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-   
+
     const task = { title, description, priority, status };
 
     try {
@@ -46,7 +46,7 @@ export default function Form() {
         setTimeout(() => {
           setSuccess(null);
         }, 3000); 
-        
+
         dispatch({type: 'CREATE_TASK', payload: json})
         navigate("/");
         navigate("/home");
