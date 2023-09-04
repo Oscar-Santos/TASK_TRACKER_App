@@ -105,9 +105,9 @@ const handleUpdateSubmit = async () => {
   <div className='home'>
   <div className='tasks'>
     {tasks &&
-      tasks.map((task) => (
+      tasks.map((task, index) => (
         <div className='task-details' key={task._id}>
-          <h4>Task</h4>
+          <h4>Task # {index + 1}</h4>
           <p>
             <strong>Title:</strong> {task.title}
           </p>
