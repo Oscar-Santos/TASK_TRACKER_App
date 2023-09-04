@@ -51,7 +51,7 @@ const createTask = async (req, res) => {
         const task = await Task.create( { title, description, priority, status } )
         res.status(200).send(task)
     } catch (error) {
-        res.status(400).json({ error: error.message })
+        res.status(400).json({ error: "You must make a selection for every option." })
         // res.status(400).json({ message: 'cannot create a task' })
     }
     
