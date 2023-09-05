@@ -14,8 +14,7 @@ function App() {
 
   return (
     <div className='app'>
-     
-      
+         
         <Nav />
         <Routes>       
           <Route path='/about' element={<About/>} />

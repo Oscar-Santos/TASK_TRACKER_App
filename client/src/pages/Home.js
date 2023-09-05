@@ -42,7 +42,6 @@ const Home = () => {
 
   }, [user])
 
-//1
 const [updatedTask, setUpdatedTask] = useState({
   _id: '', // Store the task ID for updates
   title: '',
@@ -51,10 +50,8 @@ const [updatedTask, setUpdatedTask] = useState({
   status: '',
 });
 
-// 2
 const [isUpdateFormVisible, setIsUpdateFormVisible] = useState(false);
 const [successMessage, setSuccessMessage] = useState(null);
-
 
 const handleUpdateSubmit = async () => {
   try {

@@ -15,7 +15,6 @@ export default function Nav(){
     return (
         <div className="nav">
 
- 
             <Link to="/about">
                 <div>About </div>
             </Link>
@@ -43,8 +42,6 @@ export default function Nav(){
                 </div>
                 )}
             </nav>
-            
-
         </div>
     )
 }
