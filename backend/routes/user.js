@@ -8,9 +8,7 @@ const router = express.Router();
 router.post('/login', loginUser);
 
 
-
 // sign up route
-
 router.post('/signup', signupUser);
 
 

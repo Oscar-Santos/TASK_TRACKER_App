@@ -7,7 +7,6 @@ const router = express.Router();
 router.use(requireAuth);
 
 
-
 // get all tasks
 router.get('/', getTasks)
 
@@ -22,13 +21,6 @@ router.delete('/:id', deleteTask);
 
 // update a specific task
 router.patch('/:id', updateTaskAttr);
-
-
-
-
-
-
-
 
 
 

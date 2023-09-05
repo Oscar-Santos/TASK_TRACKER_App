@@ -22,9 +22,6 @@ app.use('/api/user', userRoutes);
 
 
 
-
-
-
 // connect to mongodb
 moongoose.connect(process.env.MONGO_URL)
     .then(() => {
