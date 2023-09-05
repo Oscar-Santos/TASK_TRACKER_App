@@ -1,7 +1,10 @@
 const express = require('express');
 const { createTask, getTasks, getTask, deleteTask, updateTaskAttr } = require('../controllers/taskController');
 
+// using the middleware for authenticating the user
+const requireAuth = require('../middleware/requireAuth');
 const router = express.Router();
+router.use(requireAuth);
 
 
 
