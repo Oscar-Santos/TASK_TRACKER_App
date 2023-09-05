@@ -18,7 +18,8 @@ function App() {
       
         <Nav />
         <Routes>       
-          <Route path='/about' element={user ? <About/>  : <Navigate to='/login'/>} />
+          {/* <Route path='/about' element={user ? <About/>  : <Navigate to='/login'/>} /> */}
+          <Route path='/about' element={<About/>} />
           <Route path='/home' element={user ? <Home/> : <Navigate to='/login'/>} />
 
           <Route path='/login' element={!user ? <Login /> : <Navigate to='/'/>} />

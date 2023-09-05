@@ -5,12 +5,11 @@ const mongoose = require('mongoose');
 
 // get all tasks
 const getTasks = async (req, res) => {
-    try {
-        const tasks = await Task.find()
-        res.status(200).json(tasks);
-    } catch(error) {
-        res.status(404).json({message: 'cannot get all tasks'})
-    }
+
+    const user_id = req.user._id
+    const tasks = await Task.find({ user_id })
+  
+    res.status(200).json(tasks)
 }
 
 // get a specific task
@@ -45,10 +44,12 @@ const deleteTask = async (req, res) => {
   }
 // create a new task
 const createTask = async (req, res) => {
+    
     const { title, description, priority, status } = req.body
 
     try {
-        const task = await Task.create( { title, description, priority, status } )
+        const user_id = req.user._id
+        const task = await Task.create( { title, description, priority, status, user_id } )
         res.status(200).send(task)
     } catch (error) {
         res.status(400).json({ error: "You must make a selection for every option." })
