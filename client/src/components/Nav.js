@@ -16,9 +16,9 @@ export default function Nav(){
         <div className="nav">
 
  
-            {/* <Link to="/about">
+            <Link to="/about">
                 <div>About </div>
-            </Link> */}
+            </Link>
 
             <Link to="/home">
                 <div>Task Tracker </div>

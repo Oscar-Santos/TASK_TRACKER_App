@@ -2,7 +2,6 @@ const Task = require('../models/taskModel');
 const mongoose = require('mongoose');
 
 
-
 // get all tasks
 const getTasks = async (req, res) => {
 
