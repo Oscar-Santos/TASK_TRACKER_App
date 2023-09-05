@@ -14,21 +14,22 @@ const Signup = () => {
         <form className='signup' onSubmit={handleSubmit}>
             <h3>Sign up</h3>
 
-            <label htmlFor="">Email</label>
-
+            <label>Email</label>
+            <br />
             <input 
             type="email" 
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             />
-
+            <br />
+            <label>Password</label>
+            <br />
             <input 
             type="password" 
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             />
-
-            <button>Sign up</button>
+            <button className='signup-button'>Sign up</button>
         </form>
     )
 }
