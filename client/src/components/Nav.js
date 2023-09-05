@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom"
+import { useLogout } from "../hooks/useLogout"
 
 export default function Nav(){
+    const  { logout } = useLogout()
+
+    const handleClick = () => {
+        logout()
+    }
 
     return (
         <div className="nav">
@@ -18,6 +24,9 @@ export default function Nav(){
                 <div>Documentation Page </div>
             </Link> */}
             <nav>
+                <div>
+                    <button onClick={handleClick}>Log out</button>
+                </div>
                 <div>
                     <Link to="/login">
                         Login 
