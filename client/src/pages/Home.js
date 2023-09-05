@@ -1,6 +1,8 @@
 
 import { useState,  useEffect } from 'react'
 import { useTasksContext } from '../hooks/useTasksContext'
+import { useAuthContext } from '../hooks/useAuthContext'
+
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 
@@ -12,10 +14,15 @@ const Home = () => {
 
   const navigate = useNavigate()
   const {tasks, dispatch} = useTasksContext()
+  const { user } = useAuthContext()
 
   const fetchTasks = async () => {
   
-    const response = await fetch(`/api/tasks`)
+    const response = await fetch(`/api/tasks`, {
+      headers: { 
+        'Authorization': `Bearer ${user.token}`
+      }
+    })
     const json = await response.json()
 
     console.log(json)
@@ -29,8 +36,11 @@ const Home = () => {
 
   useEffect(() => {
 
-    fetchTasks()
-  }, [])
+    if (user) {
+      fetchTasks()
+    }
+
+  }, [user])
 
 //1
 const [updatedTask, setUpdatedTask] = useState({
@@ -52,6 +62,7 @@ const handleUpdateSubmit = async () => {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': `Bearer ${user.token}`
       },
       body: JSON.stringify(updatedTask),
     });
@@ -79,11 +90,19 @@ const handleUpdateSubmit = async () => {
 };
 
   const handleClick = async (taskId) => {
+
    console.log(taskId)
     try {
       
+      if (!user) {
+        return
+      }
+
       const response = await fetch(`/api/tasks/${taskId}`, {
         method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${user.token}`
+        }
       });
   
       if (response.ok) {

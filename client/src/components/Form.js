@@ -2,9 +2,12 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { useTasksContext } from '../hooks/useTasksContext'
+import { useAuthContext } from '../hooks/useAuthContext'
 
 export default function Form() {
   const { dispatch } = useTasksContext();
+  const { user } = useAuthContext();
+
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState("");
@@ -17,6 +20,10 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!user) {
+      setError('You need to login to see your tasks')
+      return
+    }
 
     const task = { title, description, priority, status };
 
@@ -26,6 +33,7 @@ export default function Form() {
         body: JSON.stringify(task),
         headers: {
           "Content-Type": "application/json",
+          'Authorization': `Bearer ${user.token}`
         },
       });
 
