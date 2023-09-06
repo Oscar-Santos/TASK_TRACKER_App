@@ -9,7 +9,7 @@
 .task-details {
 
   position: relative;
-  background-color: rgb(241, 195, 173);
+  background-color: rgb(178, 170, 237);
   border-radius: 2rem;
   margin: 4rem auto;
   padding: 2.5rem;
@@ -43,7 +43,7 @@
   bottom: 10px; 
   right: 10px; 
   cursor: pointer;
-  background: rgb(213, 227, 12);
+  background: rgb(218, 232, 28);
   padding: 5.5px;
   border-radius: 20%;
   color: #2d2a2a;
@@ -56,7 +56,7 @@
   bottom: 10px; 
   right: 68px; 
   cursor: pointer;
-  background: rgb(213, 227, 12);
+  background: rgb(218, 232, 28);
   padding: 5.5px;
   color: #2d2a2a;
   border-radius: 20%;
@@ -69,7 +69,7 @@ form {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f0d3d3;
+  background-color: #eec182;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -93,18 +93,18 @@ select {
   width: 100%;
   padding: 10px;
   margin: 6px 0;
-  border: 1px solid #ccc;
+  border: 2px solid #e21a1ade;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 select {
-  background-color: white;
+  background-color: rgb(239, 231, 231);
 }
 
 select option {
-  background-color: #f7f7f7;
+  background-color: rgb(239, 231, 231);
 }
 
 button {
@@ -121,7 +121,7 @@ button {
 }
 
 button:hover {
-  background-color: #be177b;
+  background-color: #6d17be;
 } 
 
 /* Improved error and success messages */
@@ -137,7 +137,7 @@ p.error {
 
 p.success {
   padding: 12px;
-  background: #55cc55;
+  background: #59da59;
   border: 2px solid #33aa33;
   color: #fff;
   border-radius: 4px;
@@ -169,7 +169,7 @@ form.signup {
   max-width: 600px;
   margin: 0 auto;
   margin: 180px auto;
-  background-color: #f0d3d3;
+  background-color: #e8b4a2;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -178,7 +178,7 @@ form.login {
   max-width: 600px;
   margin: 0 auto;
   margin: 180px auto;
-  background-color: #f0d3d3;
+  background-color: #e8b4a2;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -245,7 +245,6 @@ form.login button.login-button:hover {
 }
 
 
-/* styling for about page */
 /* Styles for the About Page */
 .about {
   max-width: 800px;
@@ -265,10 +264,15 @@ form.login button.login-button:hover {
 }
 
 .about p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
-  color: #555;
+  color: #0e0d0d;
   text-align: justify;
+}
+
+.about footer p {
+  margin-top: 40px;
+  text-align: center;
 }
 
 .about .highlighted-text {
@@ -298,7 +302,7 @@ form.login button.login-button:hover {
 }
 
 .about .cta-button:hover {
-  background-color: #992b64;
+  background-color: #322b99;
 }
 
 /* Media query for responsive design if needed */
