@@ -41,6 +41,7 @@ const deleteTask = async (req, res) => {
   
     res.status(200).json(task)
   }
+  
 // create a new task
 const createTask = async (req, res) => {
     
@@ -56,6 +57,7 @@ const createTask = async (req, res) => {
     }
     
 }
+
 
 // update a specific task 
 const updateTaskAttr = async (req, res) => {
