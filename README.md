@@ -4,7 +4,14 @@
 ## Overview 🟢 
  Task Tracker App offers user management capabilities, enabling the creation and administration of multiple users with individual secure login credentials. Robust authentication and authorization mechanisms ensure data protection, while its core task management functionalities allow users to effortlessly create, update, and delete tasks, with the flexibility to specify attributes such as title, description, priority (ranging from "Low" to "High"), and status (including options like "To Do," "In Progress," and "Completed"). Dive into a seamless user experience, where authentication safeguards access for authorized individuals, enabling task creation, priority and status adjustments, and progress tracking. Task Tracker App is your gateway to enhanced productivity and task management efficiency.
 
-![Screen Shot 2023-08-01 at 7 57 57 PM](https://github.com/Oscar-Santos/Virtual_OpenAI_Chatbot/assets/83252572/4b9993a2-935a-48b4-893b-a8e51a1b89a2)
+
+![Screen Shot 2023-09-06 at 6 04 23 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/a4795122-31a8-4159-b87c-8bce3b9ce1d1)
+
+
+![Screen Shot 2023-09-06 at 6 03 43 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/9a862688-ad0e-4226-850c-63a75fdd032d)
+
+
+![Screen Shot 2023-09-06 at 6 02 57 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/2b55ca69-9bde-4b9a-b82f-6449278e934a)
 
 
 ## To set up this app locally, please follow these steps: 🟢
