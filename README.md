@@ -90,48 +90,67 @@
 
 ## Endpoints: 🟢
 
-1)   #### Request
-`POST https://api.openai.com/v1/completions`
+1)   #### Get All Tasks
+`GET http://localhost:4000/api/tasks`
 ```json
-{
-  "model": "text-davinci-003",
-  "prompt": "Say this is a test",
-  "max_tokens": 7,
-  "temperature": 0,
-  "top_p": 1,
-  "n": 1,
-  "stream": false,
-  "logprobs": null,
-  "stop": "\n"
-}
+[
+    {
+        "_id": "64f86a04674cb962366e9653",
+        "title": "FOOD",
+        "description": "i need to buy groceries: milk, potatoes, rice, steak, chicken, avocados and grapes.",
+        "priority": "Medium",
+        "status": "To do",
+        "user_id": "64f651a11a1d1ddcb65192ac",
+        "createdAt": "2023-09-06T12:01:08.409Z",
+        "updatedAt": "2023-09-06T12:01:08.409Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f86a33674cb962366e9656",
+        "title": "TECH",
+        "description": "Look for a bigger monitor, 32 inches.",
+        "priority": "High",
+        "status": "in Progress",
+        "user_id": "64f651a11a1d1ddcb65192ac",
+        "createdAt": "2023-09-06T12:01:55.189Z",
+        "updatedAt": "2023-09-06T12:01:55.189Z",
+        "__v": 0
+    }
+]
 
 ```
+LOGIN
+1)    #### Request
+`POST http://localhost:4000/api/user/login`
+{
+    "email": "pepe@hotmail.com",
+    "password": "ABCabc123!"
+}
 
 2)    #### Response
-`POST https://api.openai.com/v1/completions`
-
-```json
 {
-  "id": "cmpl-uqkvlQyYK7bGYrRHQ0eXlWi7",
-  "object": "text_completion",
-  "created": 1589478378,
-  "model": "text-davinci-003",
-  "choices": [
-    {
-      "text": "\n\nThis is indeed a test",
-      "index": 0,
-      "logprobs": null,
-      "finish_reason": "length"
-    }
-  ],
-  "usage": {
-    "prompt_tokens": 5,
-    "completion_tokens": 7,
-    "total_tokens": 12
-  }
+    "email": "pepe@hotmail.com",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGY2NTFhMTFhMWQxZGRjYjY1MTkyYWMiLCJpYXQiOjE2OTM4NjUzMjIsImV4cCI6MTY5NDEyNDUyMn0.Xgj_eqU73_S03gJ8Cp8hVDlCIjisjXlRM065_5A0QLQ"
 }
 
 ```
+SIGNUP
+```
+1)    #### Request
+`POST localhost:4000/api/user/signup`
+{
+    "email": "pepe@hotmail.com",
+    "password": "ABCabc123!"
+}
+
+2)    #### Response
+{
+    "email": "pepe@hotmail.com",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGY2NTFhMTFhMWQxZGRjYjY1MTkyYWMiLCJpYXQiOjE2OTM4NjQzNTMsImV4cCI6MTY5NDEyMzU1M30.6KEJCS02d9OzQV_e3Lz2BaFwqdfUvZkiJM_tC2yhAlw"
+}
+
+```
+
 
 ## Vercel Deployment Link: 🟢
 
