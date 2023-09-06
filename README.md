@@ -141,6 +141,22 @@ LOGIN
 ```
 SIGNUP
 </br>
+1)    #### Request
+`POST http://localhost:4000/api/user/signup`
+```
+{
+    "email": "pepe@hotmail.com",
+    "password": "ABCabc123!"
+}
+```
+1)    #### Response
+
+```
+{
+    "email": "pepe@hotmail.com",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGY2NTFhMTFhMWQxZGRjYjY1MTkyYWMiLCJpYXQiOjE2OTM4NjQzNTMsImV4cCI6MTY5NDEyMzU1M30.6KEJCS02d9OzQV_e3Lz2BaFwqdfUvZkiJM_tC2yhAlw"
+}
+```
 
 
 
