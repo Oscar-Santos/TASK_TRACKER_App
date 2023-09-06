@@ -245,6 +245,70 @@ form.login button.login-button:hover {
 }
 
 
+/* styling for about page */
+/* Styles for the About Page */
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.about .highlighted-text {
+  font-weight: bold;
+  color: #be177b;
+}
+
+.about .quote {
+  font-style: italic;
+  margin-top: 30px;
+  color: #888;
+}
+
+/* Call-to-action button */
+.about .cta-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 32px;
+  background-color: #be177b;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about .cta-button:hover {
+  background-color: #992b64;
+}
+
+/* Media query for responsive design if needed */
+@media screen and (max-width: 768px) {
+  .about {
+    width: 90%;
+  }
+}
+
+
 
 
 @media screen and (max-width: 768px) {

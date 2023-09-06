@@ -13,7 +13,7 @@ function App() {
   const { user } = useAuthContext();
 
   return (
-    <div className='app'>
+    <div className='app-container'>
          
         <Nav />
         <Routes>       
