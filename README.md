@@ -7,13 +7,13 @@
 
 </br>
 ![Screen Shot 2023-09-06 at 6 04 23 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/a4795122-31a8-4159-b87c-8bce3b9ce1d1)
-
+</br>
 
 ![Screen Shot 2023-09-06 at 6 03 43 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/9a862688-ad0e-4226-850c-63a75fdd032d)
 
-
+</br>
 ![Screen Shot 2023-09-06 at 6 02 57 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/2b55ca69-9bde-4b9a-b82f-6449278e934a)
-
+</br>
 
 ## To set up this app locally, please follow these steps: 🟢
 
@@ -126,7 +126,7 @@ CREATE A TASK
 </br>
 1)    #### Request
 `POST http://localhost:4000/api/user/login`
-```
+```json
 {
         "title": "FOOD",
         "description": "i need to buy groceries: milk, potatoes, rice, steak, chicken, avocados and grapes.",
