@@ -79,7 +79,6 @@
 
 ## Tools: 🟢
 <p>
-  <img src="https://img.shields.io/badge/OpenAI-Integrated-brightgreen?logo=openai" /> 
   </br>
   <img src="https://img.shields.io/badge/Node.js-14.17.3-green?logo=node.js" /> 
   </br>
