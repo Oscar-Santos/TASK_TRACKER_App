@@ -2,10 +2,10 @@
 # TASK TRACKER  APP
 
 ## Overview 🟢 
- </br>
+ 
  Task Tracker App offers user management capabilities, enabling the creation and administration of multiple users with individual secure login credentials. Robust authentication and authorization mechanisms ensure data protection, while its core task management functionalities allow users to effortlessly create, update, and delete tasks, with the flexibility to specify attributes such as title, description, priority (ranging from "Low" to "High"), and status (including options like "To Do," "In Progress," and "Completed"). Dive into a seamless user experience, where authentication safeguards access for authorized individuals, enabling task creation, priority and status adjustments, and progress tracking. Task Tracker App is your gateway to enhanced productivity and task management efficiency.
 
-
+</br>
 ![Screen Shot 2023-09-06 at 6 04 23 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/a4795122-31a8-4159-b87c-8bce3b9ce1d1)
 
 
@@ -121,6 +121,34 @@ GET ALL TASKS
 ]
 
 ```
+
+CREATE A TASK
+</br>
+1)    #### Request
+`POST http://localhost:4000/api/user/login`
+```
+{
+        "title": "FOOD",
+        "description": "i need to buy groceries: milk, potatoes, rice, steak, chicken, avocados and grapes.",
+        "priority": "Medium",
+        "status": "To do"
+}
+```
+1)    #### Response
+{
+        "_id": "64f86a04674cb962366e9653",
+        "title": "FOOD",
+        "description": "i need to buy groceries: milk, potatoes, rice, steak, chicken, avocados and grapes.",
+        "priority": "Medium",
+        "status": "To do",
+        "user_id": "64f651a11a1d1ddcb65192ac",
+        "createdAt": "2023-09-06T12:01:08.409Z",
+        "updatedAt": "2023-09-06T12:01:08.409Z",
+        "__v": 0
+}
+```
+```
+
 LOGIN
 </br>
 1)    #### Request
