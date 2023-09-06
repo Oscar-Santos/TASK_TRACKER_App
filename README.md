@@ -14,54 +14,6 @@
 
 ![Screen Shot 2023-09-06 at 6 02 57 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/2b55ca69-9bde-4b9a-b82f-6449278e934a)
 </br>
-
-## To set up this app locally, please follow these steps: 🟢
-
-- Clone this repository using `git clone`. 
-- Navigate to the root directory by running `cd Virtual_OpenAI_Chatbot `.
-- In the terminal, run `npm run dev`.
-- After running 'npm run dev', if you encounter this error:
-
-<img width="1248" alt="Screen Shot 2023-08-03 at 9 46 39 AM" src="https://github.com/Oscar-Santos/Virtual_OpenAI_Chatbot/assets/83252572/2f02f889-6ab3-4744-bc53-42e3e56213f2">
-
-
-- Then ensure that you have Node.js and npm (Node Package Manager) installed on your system. You can check this by running the following commands in your terminal or command prompt:
-  </br>
-  `node -v`
-  </br>
-  `npm -v`
-
-- If these commands return the version numbers, it means Node.js and npm are installed. If not, you will need to install them from the official Node.js website [Node](https://nodejs.org).
-  
-- After this, run the following command in your terminal `npm install`.
-- Once this installation is complete, run `npm run dev` in your terminal.
-- However if you ask a question to the chatbot and the terminal gives you this error:
-
-<img width="1280" alt="Screen Shot 2023-08-03 at 9 55 38 AM" src="https://github.com/Oscar-Santos/Virtual_OpenAI_Chatbot/assets/83252572/bfeac1df-db37-4155-8ad8-3eccd22d552a">
-
-</br>
-- Then, it means that you need to obtain an API key from OpenAI. Don't worry, getting one for free is easy.
-
-## Obtaining an API key from OpenAI Chatgpt: 🟢
-
-- To log in to your OpenAI account, please visit the [OpenAI site](https://openai.com/blog/chatgpt), If you don't have an account, you will need to create one.
-- Once you login, go to `API`
-- Go to `Personal` and click on `View API Keys`
-- Then click on `+ Create new secret key`
-- Now, copy your `API key` and your `Organization Key`
-
-## Once you have obtained your OpenAI API key: 🟢
-
-- Please return to the App and open your preferred editor (e.g., `VS Code`, `Atom`, etc.) from the Virtual_OpenAI_Chatbot directory.
-- Open the `server.js` file.
-- And paste your `OpenAI API key` and your `Organization key` into this line of code:
-
-![Screen Shot 2023-07-06 at 3 57 00 PM](https://github.com/Oscar-Santos/brandCraftPro_robotApp/assets/83252572/ad7b0df5-b6e4-42c9-8d08-d13a54449be0)
-
-
-- Save the file, and now, once again, run `npm run dev` in your terminal.
-- Now the App should be up and running!! Feel free to ask any question to the App and see how it responds!!
-
   
 ## Framework: 🟢
 <p>
