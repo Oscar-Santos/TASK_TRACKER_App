@@ -125,7 +125,7 @@ LOGIN
 </br>
 1)    #### Request
 `POST http://localhost:4000/api/user/login`
-```json
+```
 {
     "email": "pepe@hotmail.com",
     "password": "ABCabc123!"
