@@ -143,4 +143,4 @@ SIGNUP
 
 ## Vercel Deployment Link: 🟢
 
-[Vercel Link](https://virtual-open-ai-chatbot.vercel.app/)
+[Vercel Link]()
