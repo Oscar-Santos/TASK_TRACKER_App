@@ -123,6 +123,7 @@ GET ALL TASKS
 ```
 LOGIN
 </br>
+```
 1)    #### Request
 `POST http://localhost:4000/api/user/login`
 {
@@ -139,6 +140,7 @@ LOGIN
 ```
 SIGNUP
 </br>
+```
 1)    #### Request
 `POST localhost:4000/api/user/signup`
 {
