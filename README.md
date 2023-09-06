@@ -2,6 +2,7 @@
 # TASK TRACKER  APP
 
 ## Overview 🟢 
+ </br>
  Task Tracker App offers user management capabilities, enabling the creation and administration of multiple users with individual secure login credentials. Robust authentication and authorization mechanisms ensure data protection, while its core task management functionalities allow users to effortlessly create, update, and delete tasks, with the flexibility to specify attributes such as title, description, priority (ranging from "Low" to "High"), and status (including options like "To Do," "In Progress," and "Completed"). Dive into a seamless user experience, where authentication safeguards access for authorized individuals, enabling task creation, priority and status adjustments, and progress tracking. Task Tracker App is your gateway to enhanced productivity and task management efficiency.
 
 
@@ -79,7 +80,6 @@
 
 ## Tools: 🟢
 <p>
-  </br>
   <img src="https://img.shields.io/badge/Node.js-14.17.3-green?logo=node.js" /> 
   </br>
   <img src="https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white" />
