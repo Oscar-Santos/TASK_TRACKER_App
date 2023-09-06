@@ -7,8 +7,7 @@
 
 /* Styles for Task Details */
 .task-details {
-  /* display: grid;
-  grid-template-columns: 3fr 1fr; */
+
   position: relative;
   background-color: rgb(241, 195, 173);
   border-radius: 2rem;
@@ -37,32 +36,32 @@
   color: #333;
 }
 
-/* Updated styles for the "Delete" span */
+/* styles for the "Delete" span */
+
 .task-details .delete-button {
   position: absolute;
-  top: 231px;
-  left: 1250px; 
+  bottom: 10px; 
+  right: 10px; 
   cursor: pointer;
   background: rgb(213, 227, 12);
-  padding: 4px;
+  padding: 5.5px;
   border-radius: 20%;
-  color: #2d2a2a; 
+  color: #2d2a2a;
   font-size: 34px;
 }
 
-/* Updated styles for the "Update" span */
+/* styles for the "Update" span */
 .task-details .update-button {
-  top: 4px;
   position: absolute;
-  left: 1250px; 
+  bottom: 10px; 
+  right: 68px; 
   cursor: pointer;
   background: rgb(213, 227, 12);
-  padding: 5px;
-  color: #2d2a2a; 
+  padding: 5.5px;
+  color: #2d2a2a;
   border-radius: 20%;
   font-size: 34px;
 }
-
 
 
 /* styling for the form  */
@@ -164,25 +163,6 @@ nav button {
   font-size: 1em;
 }
 
-/* Styles for the "Login" and "Sign Up" forms */
-/* auth forms */
-/* form.signup, form.login {
-  max-width: 600px;
-  
-  margin: 120px auto;
-  padding: 30px;
-  background: #eccccc;
-  border-radius: 12px;
-}
-
-.signup-button:hover {
-  background-color: #be177b;
-}
-.login-button:hover {
-  background-color: #be177b;
-} */
-
-/* ... (Existing styles) ... */
 
 /* Styles for the Signup Form */
 form.signup {
@@ -203,18 +183,6 @@ form.login {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* form.signup h3 {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-} */
-
-/* form.signup label {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #555;
-} */
 
 form.signup input[type="text"],
 form.signup input[type="password"],
@@ -242,13 +210,6 @@ form.login select {
   font-size: 16px;
 }
 
-/* form.signup select {
-  background-color: white;
-} */
-
-/* form.signup select option {
-  background-color: #f7f7f7;
-} */
 
 form.signup button.signup-button {
   display: block;
@@ -282,34 +243,6 @@ form.signup button.signup-button:hover {
 form.login button.login-button:hover {
   background-color: #be177b;
 }
-
-/* Improved error and success messages for Signup */
-/* form.signup p.error {
-  padding: 12px;
-  background: #ff5555;
-  border: 2px solid #ff3333;
-  color: #fff;
-  border-radius: 4px;
-  text-align: center;
-  margin-top: 20px;
-} */
-
-/* form.signup p.success {
-  padding: 12px;
-  background: #55cc55;
-  border: 2px solid #33aa33;
-  color: #fff;
-  border-radius: 4px;
-  text-align: center;
-  margin-top: 20px;
-} */
-
-/* ... (Remaining styles) ... */
-
-
-
-
-
 
 
 
