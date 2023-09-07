@@ -14,6 +14,11 @@
 
 ![Screen Shot 2023-09-06 at 6 02 57 AM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/2b55ca69-9bde-4b9a-b82f-6449278e934a)
 </br>
+
+## Table Relationship between Users and Tasks 🟢 
+
+![Screen Shot 2023-09-06 at 7 17 57 PM](https://github.com/Oscar-Santos/TASK_TRACKER_App/assets/83252572/0208c72f-2f28-485e-8deb-df3917e83542)
+
   
 ## Framework: 🟢
 <p>
