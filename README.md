@@ -146,6 +146,3 @@ SIGNUP
 
 
 
-## Vercel Deployment Link: 🟢
-
-[Vercel Link]()
