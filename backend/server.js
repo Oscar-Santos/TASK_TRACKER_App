@@ -1,5 +1,5 @@
 require('dotenv').config();
-const cors = require('cors');
+
 const express = require('express');
 const moongoose = require('mongoose');
 const app = express();
@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 // routes
 app.use('/api/tasks', taskRoutes);
 app.use('/api/user', userRoutes);
-app.use(cors()); // Enable CORS for all routes
+
 
 
 

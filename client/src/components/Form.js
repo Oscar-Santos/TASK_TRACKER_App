@@ -28,6 +28,7 @@ export default function Form() {
 
     try {
       const response = await fetch("/api/tasks", {
+
         method: "POST",
         body: JSON.stringify(task),
         headers: {
