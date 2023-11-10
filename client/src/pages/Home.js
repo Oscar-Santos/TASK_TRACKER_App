@@ -18,7 +18,7 @@ const Home = () => {
 
   const fetchTasks = async () => {
   
-    const response = await fetch(`/api/tasks`, {
+    const response = await fetch(`https://task-tracker-app-five.vercel.app//api/tasks`, {
       headers: { 
         'Authorization': `Bearer ${user.token}`
       }
