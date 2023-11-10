@@ -55,7 +55,7 @@ const [successMessage, setSuccessMessage] = useState(null);
 
 const handleUpdateSubmit = async () => {
   try {
-    const response = await fetch(`/api/tasks/${updatedTask._id}`, {
+    const response = await fetch(`https://task-tjvc.onrender.com/api/tasks/${updatedTask._id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
