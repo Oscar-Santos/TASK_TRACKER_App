@@ -95,7 +95,7 @@ const handleUpdateSubmit = async () => {
         return
       }
 
-      const response = await fetch(`/api/tasks/${taskId}`, {
+      const response = await fetch(`https://task-tjvc.onrender.com/api/tasks/${taskId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${user.token}`
