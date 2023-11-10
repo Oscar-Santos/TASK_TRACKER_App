@@ -27,7 +27,7 @@ export default function Form() {
     const task = { title, description, priority, status };
 
     try {
-      const response = await fetch("/api/tasks", {
+      const response = await fetch("https://task-tjvc.onrender.com/api/tasks", {
 
         method: "POST",
         body: JSON.stringify(task),
